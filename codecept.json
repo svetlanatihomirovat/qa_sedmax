@@ -1,0 +1,23 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 8000,
+  "output": "./output",
+  "helpers": {
+   "Nightmare": {
+      "url": "http://qa.sedmax.ru"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+    "mocha": {
+    "reporterOptions": {
+      "reportDir": "output/reports",
+      "inlineAssets": true,
+      "reportPageTitle": "Test Reports",
+      "reportTitle": "Test Reports"
+    }
+  },
+  "name": "qa_sedmax"
+}
